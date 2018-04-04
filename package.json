@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for Natours. Credit to Jonas Schmedtmann on Udemy.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunBlueWind/Natours.git"
+  },
+  "author": "Lanfeng Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunBlueWind/Natours/issues"
+  },
+  "homepage": "https://github.com/SunBlueWind/Natours",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
