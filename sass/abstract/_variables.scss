@@ -9,7 +9,8 @@ $color-secondary-dark: #ff7738;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
-$color-grey-dark: #777;
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 $color-white: #fff;
@@ -44,3 +45,6 @@ $gutter-horizontal: 6rem;
 
 // POLYGON
 $polygon-primary: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+// BORDER
+$border-radius-sm: 3px;
