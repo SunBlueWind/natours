@@ -73,7 +73,7 @@
         top: -.5rem;
 
         &::after {
-            @include center-x-y;
+            @include absolute-center;
             content: "";
             display: block;
             height: 1.3rem;

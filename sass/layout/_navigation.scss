@@ -42,7 +42,7 @@
     }
 
     &__list {
-        @include center-x-y;
+        @include absolute-center;
         list-style: none;
         text-align: center;
         width: 100%;
