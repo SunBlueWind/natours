@@ -7,6 +7,16 @@
     -webkit-clip-path: $polygon-primary;
     clip-path: $polygon-primary;
 
+    @include respond(tab-port) {
+        -webkit-clip-path: $polygon-primary-tab-port;
+        clip-path: $polygon-primary-tab-port;
+    }
+
+    @include respond(phone) {
+        -webkit-clip-path: $polygon-primary-phone;
+        clip-path: $polygon-primary-phone;
+    }
+
     &__logo-box {
         position: absolute;
         top: 4rem;
