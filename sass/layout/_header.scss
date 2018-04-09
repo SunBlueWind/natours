@@ -1,11 +1,22 @@
 .header {
-    height: 95vh;
-    background-image: $linear-gradient-primary-transparent, url(../img/hero.jpg);
+    height: 85vh;
+    background-image: $linear-gradient-primary-transparent, url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
-    -webkit-clip-path: $polygon-primary;
-    clip-path: $polygon-primary;
+    
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: $polygon-primary;
+        clip-path: $polygon-primary;
+        height: 95vh;
+    }
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), // 600px
+           (-wevkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+           (min-width: 125em) { // 2000px
+        background-image: $linear-gradient-primary-transparent, url(../img/hero.jpg);
+    }
 
     @include respond(tab-port) {
         -webkit-clip-path: $polygon-primary-tab-port;
