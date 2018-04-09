@@ -12,9 +12,9 @@
         height: 95vh;
     }
 
-    @media (min-resolution: 192dpi) and (min-width: 37.5em), // 600px
-           (-wevkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-           (min-width: 125em) { // 2000px
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), // 600px
+           only screen and (-wevkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+           only screen and (min-width: 125em) { // 2000px
         background-image: $linear-gradient-primary-transparent, url(../img/hero.jpg);
     }
 
